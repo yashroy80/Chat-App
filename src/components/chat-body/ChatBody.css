@@ -5,4 +5,5 @@
     padding: 15px 20px;
     display: flex;
     max-height: 80vh;
+    min-height: 600px;
 }

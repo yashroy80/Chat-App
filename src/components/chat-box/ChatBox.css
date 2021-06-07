@@ -25,6 +25,7 @@
     border-radius: 15px;
     overflow-y: auto;
     overflow-x: hidden;
+    background-color: #dfe3ee;
 }
 
 #start-conv{

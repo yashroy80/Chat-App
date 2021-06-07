@@ -1,3 +1,6 @@
-- Best viewed in Google Chrome
-- Use new tabs, enter same link to login and create users. The new users will only be present when you use new tabs for logging in else it'll show empty.
-- Use localStorage.clear() in browser console(ctrl+shift+I then console) if you want to close any tabs(You will need to close all tabs for now, will fix this after some update on logout).
+- This is a simple Chat App which is built entirely in React. The communication can be done via tabs in the browser(consider each tab as a separate user).
+- Best viewed in Google Chrome.
+- Use new tabs, enter same link to login and create users. The new users will only be present for messaging when you use new tabs for logging in else 
+  it'll show empty.
+- Remember to logout before closing tab or it'll malfunction. In case of malfunction open app then open developer tools(ctrl+shift+I) then go to console 
+  and type localStorage.clear() and reload webpage.

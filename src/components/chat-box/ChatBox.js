@@ -60,7 +60,7 @@ export default function ChatBox() {
                 <div className="chat-footer">
                     <input id="msg-input" value={inputMsg} onChange={(e) => { setInputMsg(e.target.value) }} onKeyPress={enterHandler} type="text" placeholder="Write message"></input>
                 </div>
-            </React.Fragment> : <h1 id="start-conv">Click on a Conversation to begin or Start a new one by opening a New Tab.</h1>}
+            </React.Fragment> : <h1 id="start-conv">Click on a Conversation to begin or Start a New one.</h1>}
         </div>
     )
 }
