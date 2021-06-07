@@ -40,31 +40,31 @@ export default function Login(props) {
                 //setting initial msgs
                 let msgs = JSON.parse(localStorage.getItem('msgs'));
                 localStorage.getItem('msgs') ? localStorage.setItem('msgs', JSON.stringify([...msgs, { id: idcount, msgs: [] }])) : localStorage.setItem('msgs', JSON.stringify([{ id: idcount, msgs: [] }]))
-                
+
                 //incrementing idcount
                 localStorage.setItem('idcount', ++idcount);
                 //resetting users
                 props.setUserProf(JSON.parse(sessionStorage.getItem('userProf')));
                 //updating msgs
                 msgs = JSON.parse(localStorage.getItem('msgs'));
-                for(let i=0;i<idcount;i++){
-                    msgs.map((mainuser=>{
-                        if(mainuser.id!==i){
+                for (let i of usersData) {
+                    msgs.map((mainuser => {
+                        if (mainuser.id !== i.id) {
                             //mainuser.msgs.push({ id: i, msgs: [] });
-                            let sign=true;//check if need to push or not
-                            for(let j of mainuser.msgs){
-                                if(j.id===i){
-                                    sign=false;
+                            let sign = true;//check if need to push or not
+                            for (let j of mainuser.msgs) {
+                                if (j.id === i.id) {
+                                    sign = false;
                                     break;
                                 }
                             }
-                            if(sign){
-                                mainuser.msgs.push({ id: i, msgs: [] });
+                            if (sign) {
+                                mainuser.msgs.push({ id: i.id, msgs: [] });
                             }
                         }
                     }))
                 }
-                localStorage.setItem('msgs',JSON.stringify(msgs));
+                localStorage.setItem('msgs', JSON.stringify(msgs));
             }}>Login</button>
         </div>
     )
