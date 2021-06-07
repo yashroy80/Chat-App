@@ -6,4 +6,5 @@
     display: flex;
     max-height: 80vh;
     min-height: 600px;
+    max-width: 100%;
 }
