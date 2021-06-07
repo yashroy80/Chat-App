@@ -4,4 +4,3 @@
   it'll show empty.
 - Remember to logout before closing tab or it'll malfunction. In case of malfunction:- open app, then open developer tools(ctrl+shift+I) and then go to console 
   and type localStorage.clear() and at last reload webpage.
-- 
