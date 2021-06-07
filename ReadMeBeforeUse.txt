@@ -1,0 +1,3 @@
+- Best viewed in Google Chrome
+- Use new tabs, enter same link to login and create users. The new users will only be present when you use new tabs for logging in else it'll show empty.
+- Use localStorage.clear() in browser console(ctrl+shift+I then console) if you want to close any tabs(You will need to close all tabs for now, will fix this after some update on logout).
