@@ -10,6 +10,7 @@
     display: flex;
     background-color: blueviolet;
     height: 60px;
+    min-height: 60px;
     width: 100%;
     border-radius: 15px;
     align-items: center;
