@@ -1,0 +1,1 @@
+[{id:"user1",msgs:[{id:"user2",msgs:[]},{id:"user3",msgs:[]}}]

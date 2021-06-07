@@ -15,6 +15,12 @@ export default function ChatList() {
     })
     return (
         <div className="chat-list">
+            <button className="all-btn" onClick={()=>{
+                //window.open(window.location.href, '_blank');// for copy of previously opened window
+                window.open(window.location.origin, '_blank');
+                sessionStorage.clear();
+                window.location.reload();
+            }}>Create Conversation</button>
             <h1>Active Users</h1>
             <div id="ItemList">
                 {users.map(user=>{
