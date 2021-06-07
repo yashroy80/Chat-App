@@ -49,10 +49,14 @@ export default function ChatBox() {
                     <Avatar image={clickedUser.image} />{clickedUser.name}
                 </div>
                 <div className="chat-content">
-                    {msgs[userProf.id].msgs.map(inneruser => {
-                        if (inneruser.id === clickedUser.id) {
-                            return inneruser.msgs.map((item, index) => {
-                                return <div className={item.id === userProf.id ? "current" : "other"} key={index}>{item.msg}</div>
+                    {msgs.map(mainuser=>{
+                        if(mainuser.id==userProf.id){
+                            return mainuser.msgs.map(inneruser=>{
+                                if(inneruser.id===clickedUser.id){
+                                    return inneruser.msgs.map((item, index) => {
+                                        return <div className={item.id === userProf.id ? "current" : "other"} key={index}>{item.msg}</div>
+                                    })
+                                }
                             })
                         }
                     })}
