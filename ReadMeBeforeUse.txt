@@ -3,4 +3,4 @@
 - Use new tabs, enter same link to login and create users. The new users will only be present for messaging when you use new tabs for logging in else 
   it'll show empty.
 - Remember to logout before closing tab or it'll malfunction. In case of malfunction:- open app, then open developer tools(ctrl+shift+I) and then go to console 
-  and type localStorage.clear() and reload webpage.
+  and type localStorage.clear() and at last reload webpage.
