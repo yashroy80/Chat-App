@@ -37,7 +37,7 @@
     word-wrap: break-word;
     max-width: 40%;
     border-radius: 15px;
-    min-width: fit-content;
+    min-width: 50px;
     min-height: fit-content;
     border: 3px solid aliceblue;
     background-color: blueviolet;
@@ -52,10 +52,9 @@
 .other{
     word-wrap: break-word;
     max-width: 40%;
-    width: fit-content;
     border-radius: 15px;
     border-bottom-left-radius: 0;
-    min-width: fit-content;
+    width: fit-content;
     min-height: fit-content;
     border: 2px solid blueviolet;
     background-color: aliceblue;
