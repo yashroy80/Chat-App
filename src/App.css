@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+input, input:focus{
+  height: 60px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.App {
+  justify-content: center;
+  max-width: 90%;
+  margin: auto;
+  background-color: #fff;
+  min-height: 80vh;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  padding-left: 0;
+}
+
+.all-btn{
+  color:aliceblue;
+  border-radius: 20px;
+  background-color: blueviolet;
+  width: 90%;
+  border-color: blueviolet;
+  min-height: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dfe3ee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(162, 102, 218);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: blueviolet;
+}
