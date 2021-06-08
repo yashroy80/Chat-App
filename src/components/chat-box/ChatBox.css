@@ -29,6 +29,10 @@
     background-color: #dfe3ee;
 }
 
+.chat-footer{
+    display: flex;
+}
+
 #start-conv{
     align-self: center;
 }
@@ -61,4 +65,17 @@
     color: blueviolet;
     margin: 5px;
     padding: 10px;
+}
+
+#send-btn{
+    width: 100px;
+    border-radius: 25px;
+    background-color: #f4f3f8;
+    border-color: blueviolet;
+    color: blueviolet;
+}
+
+#send-btn:hover{
+    background-color: blueviolet;
+    color: #f4f3f8;
 }

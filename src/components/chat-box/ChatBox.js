@@ -62,6 +62,30 @@ export default function ChatBox() {
         }
 
     }
+
+    const submitHandler=(e)=>{
+        if (e.target.value !== "") {
+            let newmsgs = JSON.parse(localStorage.getItem('msgs'));
+            newmsgs.map(mainuser => {
+                if (mainuser.id === userProf.id) {
+                    mainuser.msgs.map(inneruser => {
+                        if (inneruser.id === clickedUser.id) {
+                            inneruser.msgs.push({ id: userProf.id, msg: inputMsg });
+                        }
+                    })
+                }
+                if (mainuser.id === clickedUser.id) {
+                    mainuser.msgs.map(inneruser => {
+                        if (inneruser.id === userProf.id) {
+                            inneruser.msgs.push({ id: userProf.id, msg: inputMsg });
+                        }
+                    })
+                }
+            })
+            localStorage.setItem('msgs', JSON.stringify(newmsgs));
+            setInputMsg("");
+        }
+    }
     return (
         <div className="chat-box">
             {clickedUser ? <React.Fragment>
@@ -86,6 +110,7 @@ export default function ChatBox() {
                 </div>
                 <div className="chat-footer">
                     <input id="msg-input" value={inputMsg} onChange={(e) => { setInputMsg(e.target.value) }} onKeyPress={enterHandler} type="text" placeholder="Write message"></input>
+                    <button id="send-btn" value={inputMsg} onClick={submitHandler}>Send</button>
                 </div>
             </React.Fragment> : <h1 id="start-conv">Click on a Conversation to begin or Start a New one.</h1>}
         </div>
