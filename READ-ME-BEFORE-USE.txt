@@ -1,0 +1,6 @@
+- This is a simple Chat App which is built entirely using React. The communication can be done via tabs in the browser(consider each tab as a separate user).
+- Best viewed in Google Chrome.
+- Use new tabs, enter same link to login and create users. The new users will only be present for messaging when you use new tabs for logging in else 
+  it'll show empty.
+- Remember to logout before closing tab or it'll malfunction. In case of malfunction:- open app, then open developer tools(ctrl+shift+I) and then go to console 
+  and type localStorage.clear() and at last reload webpage.
