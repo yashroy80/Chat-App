@@ -1,7 +1,7 @@
 .user-profile{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 450px;
     background-color: blueviolet;
     border-radius: 15px;
     padding: 15px;
@@ -22,7 +22,9 @@
 }
 
 .user{
-    color: aliceblue;
+    background-color: #f4f3f8;
+    padding: 15px;
+    border-radius: 25px;
 }
 
 #logout-btn{
