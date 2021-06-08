@@ -19,12 +19,12 @@ export default function ChatBox() {
 
     useEffect(() => { 
         scrollToBottom(); // for initial render of chat-content
-        if (msgContainer) { // for new messages
+        /*if (msgContainer) { // for new messages
             msgContainer.current?.addEventListener('DOMNodeInserted', event => {
                 const { currentTarget: target } = event;
                 target.scroll({ top: target.scrollHeight, behavior: 'smooth' });
             });
-        }
+        }*/
     })
 
     useEffect(() => {
